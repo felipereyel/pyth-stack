@@ -1,5 +1,9 @@
-# MMDB
-My Movies Database
+# Pyth Stack
+
+## Components
+- Python + FastHTML
+- Tailwind
+- HTMX
 
 ## Dependencies
 Managed by `uv`
@@ -18,3 +22,8 @@ uvx ruff format . && uvx ruff check . --fix && uvx ruff check . --select I --fix
 ```sh
     npx pyright
 ```
+
+## How to run
+Before running be sure to add all required environment variables (see [env example](.env.example)) 
+
+- serve: `mmdb serve`
