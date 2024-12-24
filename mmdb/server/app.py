@@ -1,16 +1,14 @@
-from fasthtml.components import Div, P
 from fasthtml.fastapp import fast_app
 
 from mmdb.config import Config
-
-# from fasthtml.xtend import Titled
+from mmdb.server.design.pages import Home
 
 
 def get_app(config: Config):
-    app, rt = fast_app()
+    app, _ = fast_app()
 
-    @rt("/")
-    def get():
-        return Div(P("Hello World!"), hx_get="/change")
+    @app.get("/")
+    def home():
+        return Home()
 
     return app
