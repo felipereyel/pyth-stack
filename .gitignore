@@ -1,0 +1,6 @@
+.env
+raw.json
+__pycache__
+*.egg-info
+*.pyc
+.sesskey
